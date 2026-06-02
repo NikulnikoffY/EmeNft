@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { useTonWallet } from "@tonconnect/ui-react";
-import "./header.css";
+import "./profile.css";
 
 export default function UserProfilePage() {
     const params = useParams();
