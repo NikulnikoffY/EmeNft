@@ -1,0 +1,365 @@
+/* ========== ПЕРВЫЙ ЭКРАН ========== */
+.token-block {
+    padding: 60px 32px;
+    background-color: #0B1219;
+    border-bottom: 1px solid #0A8A5C30;
+}
+
+.token-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.token-coin {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+.coin-image {
+    filter: drop-shadow(0 0 20px rgba(10, 138, 92, 0.3));
+    transition: transform 0.4s ease;
+}
+
+.coin-image:hover {
+    transform: scale(1.02);
+}
+
+.token-info {
+    flex: 1;
+    min-width: 280px;
+    color: #e6f7ff;
+}
+
+.token-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #A8F0D0, #0A8A5C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.token-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #cbd5e1;
+}
+
+.token-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.token-list li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+}
+
+.token-note {
+    font-size: 0.9rem;
+    color: #0A8A5C;
+    border-left: 3px solid #0A8A5C;
+    padding-left: 16px;
+    margin-top: 16px;
+}
+
+/* ========== ВТОРОЙ ЭКРАН ========== */
+.tokenomics {
+    padding: 80px 32px;
+    background-color: #0B1219;
+    border-top: 1px solid #0A8A5C30;
+    border-bottom: 1px solid #0A8A5C30;
+}
+
+.tokenomics-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tokenomics-info {
+    flex: 1;
+    min-width: 320px;
+}
+
+.tokenomics-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #A8F0D0, #0A8A5C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 12px;
+}
+
+.tokenomics-subtitle {
+    color: #0A8A5C;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-left: 3px solid #0A8A5C;
+    padding-left: 16px;
+}
+
+.presale-card {
+    background: rgba(10, 138, 92, 0.1);
+    border: 1px solid #0A8A5C50;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 32px;
+    backdrop-filter: blur(4px);
+}
+
+.presale-card h3 {
+    color: #A8F0D0;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.presale-details div {
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.presale-details span {
+    color: #0A8A5C;
+    font-weight: 600;
+    display: inline-block;
+    width: 140px;
+}
+
+.supply-card {
+    background: rgba(10, 138, 92, 0.05);
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.supply-card h3 {
+    color: #A8F0D0;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.supply-list {
+    list-style: none;
+    padding: 0;
+}
+
+.supply-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #0A8A5C20;
+    color: #cbd5e1;
+}
+
+.supply-list li span {
+    color: #0A8A5C;
+    font-weight: 600;
+}
+/* Диаграмма и легенда — исправленные */
+.tokenomics-chart {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.chart-placeholder {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #0A8A5C 0% 15%,
+        #1F8A5C 15% 35%,
+        #3B8A5C 35% 45%,
+        #5A8A5C 45% 60%,
+        #78A85C 60% 70%,
+        #9FC85C 70% 75%,
+        #B8D96C 75% 100%
+    );
+    box-shadow: 0 0 20px rgba(10, 138, 92, 0.4);
+    flex-shrink: 0;
+}
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.legend-color.presale { background-color: #0A8A5C; }
+.legend-color.liquidity { background-color: #1F8A5C; }
+.legend-color.team { background-color: #3B8A5C; }
+.legend-color.marketing { background-color: #5A8A5C; }
+.legend-color.staking { background-color: #78A85C; }
+.legend-color.airdrop { background-color: #9FC85C; }
+.legend-color.emission { background-color: #B8D96C; }
+
+.chart-note {
+    text-align: center;
+    color: #8aa0b0;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    border-top: 1px solid #0A8A5C30;
+    padding-top: 24px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+/* ========== ROADMAP TEASER ========== */
+.roadmap-teaser {
+    padding: 80px 32px;
+    background-color: #0B1219;
+    border-bottom: 1px solid #0A8A5C30;
+}
+
+.roadmap-teaser-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.roadmap-teaser-image {
+    flex: 1;
+    min-width: 240px;
+    text-align: center;
+}
+
+.teaser-art {
+    filter: drop-shadow(0 0 15px rgba(10, 138, 92, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.teaser-art:hover {
+    transform: scale(1.02);
+}
+
+.roadmap-teaser-info {
+    flex: 1;
+    min-width: 280px;
+    color: #e6f7ff;
+}
+
+.roadmap-teaser-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #A8F0D0, #0A8A5C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.roadmap-teaser-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #cbd5e1;
+}
+
+.roadmap-teaser-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+}
+
+.roadmap-teaser-list li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+}
+
+.roadmap-teaser-list li:first-child {
+    color: #0A8A5C;
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.roadmap-teaser-list li:nth-child(2) {
+    color: #A8F0D0;
+}
+
+.roadmap-full-link {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid #0A8A5C;
+    color: #0A8A5C;
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    margin-bottom: 16px;
+}
+
+.roadmap-full-link:hover {
+    background: #0A8A5C;
+    color: #0B1219;
+    box-shadow: 0 0 15px #0A8A5C;
+}
+
+.roadmap-teaser-note {
+    font-size: 0.85rem;
+    color: #8aa0b0;
+}
+
+@media (max-width: 768px) {
+    .roadmap-teaser {
+        padding: 48px 20px;
+    }
+    .roadmap-teaser-title {
+        font-size: 2rem;
+    }
+    .roadmap-teaser-container {
+        gap: 32px;
+    }
+}

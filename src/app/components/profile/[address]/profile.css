@@ -1,0 +1,133 @@
+/* Страница профиля */
+.profile-page {
+    min-height: 100vh;
+    background-color: #0B1219;
+    padding: 40px 20px;
+}
+
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    padding: 30px;
+    background: rgba(10, 138, 92, 0.05);
+    border-radius: 32px;
+    border: 1px solid #0A8A5C30;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    border: 3px solid #0A8A5C;
+    background: #1A2A24;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-address {
+    font-size: 1.8rem;
+    color: #A8F0D0;
+    margin-bottom: 8px;
+}
+
+.profile-badge {
+    display: inline-block;
+    background: #0A8A5C;
+    color: #0B1219;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 32px;
+    margin-top: 16px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A8A5C;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #8aa0b0;
+}
+
+/* Заглушка для NFT */
+.profile-nft-section {
+    margin-bottom: 40px;
+}
+
+.profile-nft-section h2 {
+    color: #e6f7ff;
+    margin-bottom: 24px;
+}
+
+.nft-grid.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background: rgba(10, 138, 92, 0.03);
+    border-radius: 24px;
+    border: 1px dashed #0A8A5C;
+}
+
+.nft-card-placeholder {
+    text-align: center;
+    padding: 40px;
+}
+
+.nft-image-placeholder {
+    width: 120px;
+    height: 120px;
+    background: #1A2A24;
+    border-radius: 20px;
+    margin: 0 auto 20px;
+    box-shadow: 0 0 10px #0A8A5C;
+}
+
+.nft-card-placeholder p {
+    color: #8aa0b0;
+}
+
+.nft-note {
+    text-align: center;
+    margin-top: 20px;
+    color: #0A8A5C;
+    font-size: 0.85rem;
+}
+
+.back-home-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 1px solid #0A8A5C;
+    border-radius: 40px;
+    color: #0A8A5C;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background: #0A8A5C;
+    color: #0B1219;
+    box-shadow: 0 0 15px #0A8A5C;
+}

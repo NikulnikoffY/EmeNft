@@ -1,0 +1,59 @@
+.header {
+    width: 100%;
+    max-width: 1920px;
+    height: 90px;
+    background-color:#0D1117;
+    color: azure;
+    font-size: 24px;
+    border-bottom: 2px solid #0A8A5C;
+    margin: 0 auto;
+}
+
+.hede {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;  /* левая | центр | правая */
+    align-items: center;
+    padding: 12px 32px;
+    height: 100%;
+}
+
+.nav-left {
+    display: flex;
+    gap: 32px;
+    justify-self: start;
+}
+
+.nav-left a {
+    color: azure;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover {
+    color: #0A8A5C;
+}
+
+.logo {
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right {
+    justify-self: end;
+}
+
+.connect-btn-placeholder {
+    background-color: #0A8A5C;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+.connect-btn-placeholder:hover {
+    opacity: 0.8;
+}
