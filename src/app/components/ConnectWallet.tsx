@@ -1,13 +1,13 @@
 "use client";
 
 import { useTonConnectUI, useTonWallet } from "@tonconnect/ui-react";
+import Link from "next/link";
 
 const ConnectWallet = () => {
     const [tonConnectUI] = useTonConnectUI();
     const wallet = useTonWallet();
 
-    const handleConnect = async () => {
-        // Открываем модалку с выбором кошелька
+    const handleConnect = () => {
         tonConnectUI.openModal();
     };
 
@@ -15,17 +15,20 @@ const ConnectWallet = () => {
         tonConnectUI.disconnect();
     };
 
-    // Если кошелек подключен — показываем адрес
+    // Кошелёк подключён → показываем ссылку на профиль
     if (wallet) {
-        const shortAddress = `${wallet.account.address.slice(0, 4)}...${wallet.account.address.slice(-4)}`;
+        const shortAddress = `${wallet.account.address.slice(0, 6)}...${wallet.account.address.slice(-4)}`;
         return (
-            <button onClick={handleDisconnect} className="connect-btn">
+            <Link 
+                href={`/profile/${wallet.account.address}`}
+                className="connect-btn profile-link"
+            >
                 {shortAddress}
-            </button>
+            </Link>
         );
     }
 
-    // Если не подключен — показываем кнопку "Подключить"
+    // Кошелёк не подключён → показываем кнопку
     return (
         <button onClick={handleConnect} className="connect-btn">
             Connect Wallet
