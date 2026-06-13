@@ -45,9 +45,8 @@ const TheHeader = () => {
 
                 {/* Навигация (десктоп — всегда видна, мобилка — через бургер) */}
                 <nav className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
-                    <Link href="/" onClick={closeMenu}>Home</Link>
+                    <Link href="/" onClick={closeMenu}>Gallery</Link>
                     <Link href="/token" onClick={closeMenu}>Token</Link>
-                    <Link href="/nft-marketplace" onClick={closeMenu}>NFT Market</Link>
                     <Link href="/roadmap" onClick={closeMenu}>Roadmap</Link>
                     <div className="mobile-connect">
                         <ConnectWallet />
