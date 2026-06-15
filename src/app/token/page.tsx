@@ -50,15 +50,23 @@ const TokenBlock = () => {
                         </p>
 
                         <div className="presale-card">
-                            <h3>Пресейл</h3>
-                            <div className="presale-details">
-                                <div><span>Цена:</span> 1 USDT = 20 000 EME</div>
-                                <div><span>Хардкап:</span> 150 000 USDT</div>
-                                <div><span>Софткап:</span> 25 000 USDT</div>
-                                <div><span>Мин. покупка:</span> 50 USDT</div>
-                                <div><span>Вестинг:</span> 20% сразу, 80% по 10%/мес</div>
-                            </div>
-                        </div>
+    <h3>Пресейл</h3>
+    <div className="presale-details">
+        <div><span>Цена:</span> 1 USDT = 20 000 EME</div>
+        <div><span>Хардкап:</span> 150 000 USDT</div>
+        <div><span>Софткап:</span> 25 000 USDT</div>
+        <div><span>Мин. покупка:</span> 50 USDT</div>
+        <div><span>Всего на пресейл:</span> 3 000 000 000 EME</div>
+        <div><span>Из них команда (вестинг в рамках пресейла):</span> 160 000 000 EME</div>
+        <div><span>Доступно инвесторам:</span> 2 840 000 000 EME</div>
+        <div><span>Вестинг:</span> 20% сразу, 80% по 10%/мес (8 месяцев)</div>
+    </div>
+    <p className="presale-note">
+        <strong>Команда продаёт часть своей доли в рамках пресейла, чтобы показать веру в проект.</strong> 
+        Токены будут распределены равномерно в течение всего пресейла, чтобы не обрушить рынок на старте. 
+        Все средства идут на продвижение маркетплейса и токена Emerald.
+    </p>
+</div>
 
                         <div className="supply-card">
                             <h3>Распределение Genesis (20 млрд EME)</h3>

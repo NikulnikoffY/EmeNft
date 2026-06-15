@@ -638,6 +638,305 @@
     margin-bottom: 16px;
 }
 
+/* ========== ROADMAP PAGE ========== */
+.roadmap-page {
+    background-color: #0B1219;
+    padding: 60px 32px;
+    min-height: 100vh;
+}
+
+.roadmap-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.roadmap-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #A8F0D0, #0A8A5C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.roadmap-subtitle {
+    text-align: center;
+    color: #0A8A5C;
+    font-size: 1.1rem;
+    margin-bottom: 48px;
+}
+
+/* Карточки этапов */
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.roadmap-card {
+    background: rgba(10, 138, 92, 0.05);
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid #0A8A5C20;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.roadmap-card:hover {
+    transform: translateY(-5px);
+    border-color: #0A8A5C;
+}
+
+.roadmap-phase {
+    display: inline-block;
+    background: #0A8A5C20;
+    color: #0A8A5C;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.roadmap-card h3 {
+    color: #A8F0D0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.roadmap-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.roadmap-card li {
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Секция плюшек */
+.features-section {
+    margin-bottom: 64px;
+}
+
+.features-section h2 {
+    font-size: 2rem;
+    color: #A8F0D0;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    background: rgba(10, 138, 92, 0.08);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    background: rgba(10, 138, 92, 0.12);
+}
+
+.feature-card h3 {
+    color: #A8F0D0;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+/* Выгода */
+.benefits-section {
+    margin-bottom: 64px;
+}
+
+.benefits-section h2 {
+    font-size: 2rem;
+    color: #A8F0D0;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.benefit-card {
+    background: rgba(10, 138, 92, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    border-left: 4px solid #0A8A5C;
+}
+
+.benefit-card h3 {
+    color: #A8F0D0;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+/* Честное предупреждение */
+.warning-section {
+    background: rgba(255, 105, 180, 0.08);
+    border-radius: 24px;
+    padding: 32px;
+    margin-bottom: 48px;
+    border: 1px solid #ff69b430;
+    text-align: center;
+}
+
+.warning-section h2 {
+    color: #ff69b4;
+    margin-bottom: 16px;
+}
+
+.warning-section p {
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Футер и ссылка */
+.roadmap-footer {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid #0A8A5C30;
+}
+
+.token-link {
+    color: #0A8A5C;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.token-link:hover {
+    color: #A8F0D0;
+    text-decoration: underline;
+}
+
+.prototype-note {
+    margin-top: 24px;
+    font-size: 0.9rem;
+    color: #8aa0b0;
+}
+
+.roadmap-footer p {
+    color: #cbd5e1;  /* светлый серый, читается на тёмном фоне */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.roadmap-footer .token-link {
+    color: #0A8A5C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.roadmap-footer .token-link:hover {
+    color: #A8F0D0;
+    text-decoration: underline;
+}
+
+.prototype-note {
+    color: #8aa0b0;  /* чуть темнее, но всё равно читается */
+    font-size: 0.9rem;
+    margin-top: 24px;
+}
+
+/* ========== РОЗОВАЯ КНОПКА КОШЕЛЬКА ========== */
+.connect-btn {
+    background: linear-gradient(135deg, #ff69b4, #ff1493);
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    border-radius: 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+}
+
+.connect-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 16px rgba(255, 105, 180, 0.7);
+    background: linear-gradient(135deg, #ff1493, #ff69b4);
+}
+
+/* Ссылка-кнопка (когда кошелёк подключён) */
+.profile-link {
+    background: transparent;
+    border: 1px solid #ff69b4;
+    color: #ff69b4;
+    box-shadow: none;
+}
+
+.profile-link:hover {
+    background: #ff69b4;
+    color: #0B1219;
+    box-shadow: 0 0 12px #ff69b4;
+}
+
+/* Кнопка установки кошелька (если не установлен) */
+.install-btn {
+    background: transparent;
+    border: 1px solid #ff69b4;
+    color: #ff69b4;
+}
+
+.install-btn:hover {
+    background: #ff69b4;
+    color: #0B1219;
+}
+
+/* Кнопка загрузки */
+.loading-btn {
+    background: #2A2A2A;
+    border: 1px solid #ff69b4;
+    color: #8aa0b0;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .roadmap-page {
+        padding: 40px 20px;
+    }
+    .roadmap-title {
+        font-size: 2rem;
+    }
+    .features-section h2,
+    .benefits-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nft-detail-page {
         padding: 40px 20px;

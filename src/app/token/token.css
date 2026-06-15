@@ -248,6 +248,22 @@
     width: 100%;
 }
 
+.presale-note {
+    margin-top: 16px;
+    padding: 12px;
+    background: rgba(10, 138, 92, 0.15);
+    border-left: 3px solid #0A8A5C;
+    border-radius: 12px;
+    color: #cbd5e1;        /* светло-серый, читается на тёмном фоне */
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.presale-note strong {
+    color: #A8F0D0;        /* подсветка для жирного текста */
+    font-weight: 700;
+}
+
 /* ========== ROADMAP TEASER ========== */
 .roadmap-teaser {
     padding: 80px 32px;
